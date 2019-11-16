@@ -278,3 +278,57 @@ h4{
         background-color: $color-four;
     }
 }
+
+/* FORM*/
+.contact{
+    flex: 1 0 0;
+    text-align: left;
+    margin-left: 47px;
+    align-self: center;
+}
+.form{
+    flex: 2 0 0;
+    margin-right: 47px;
+    align-self: center;
+    text-align: left;
+}
+input{
+    color: $color-main;
+    background-color: $color-three;
+    display: block;
+    margin:40px 0;
+    width: 100%;
+    height: 50px;
+    font-size:16px;
+    border: none;
+    border-bottom: 3px solid $color-main;
+}
+input::placeholder{
+    color: $color-main;
+}
+textarea{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: $color-three;
+    color: $color-main;
+    font-size:16px;
+    border: none;
+    border-bottom: 2px solid $color-main;
+    margin-bottom: 20px;
+}
+textarea::placeholder{
+    color: $color-main;
+}
+.last{
+    color: $color-main;
+    background-color: $color-three;
+}
+.contact p{
+    line-height: 1.3;
+    font-size: 16px;
+}
+.contact > div p:first-of-type{
+    font-weight: 700;
+    font-size: 18px;
+}
