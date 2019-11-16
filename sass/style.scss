@@ -1,4 +1,5 @@
 /* Variables*/
+
 $color-main: #f5f6fa;
 $color-one: #833471;
 $color-two: #487eb0;
@@ -9,7 +10,9 @@ $color-hover: #fdcb6e;
 $font-main: 'Inconsolata', monospace;
 $font-two:'Signika', sans-serif;
 $transition: all 1s;
+
 /* Global */
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -42,4 +45,62 @@ body{
 }
 section{
     padding: 96px 0;
+}
+
+/* Navigation*/
+
+.navigation{
+    background-color: $color-three;
+    padding: 12px 0;
+    ul{
+    padding: 20px;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+      ul{
+            a{
+                color: #0fbcf9;
+                display: block;
+                &:hover{
+                color: #ff4757;
+                }
+            }
+            li{
+                display: block;
+                margin-top: 8px;
+                text-align: left;
+                &:first-of-type{
+                margin-top: -5px;
+                }
+            }
+        }
+    }
+
+    li{
+        display: inline-block;
+        padding-right: 26px;
+        position: relative;
+        width: 110px;
+        text-align: center;
+        ul{
+            background-color: $color-main ;
+            display: none;
+            position: absolute;
+            padding-top: 12px;
+            width: 100%;
+        }
+        &:hover ul{
+            display: block;
+            text-align: left;
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $color-main;
+        &:hover{
+        color: $color-hover;
+        }
+    }
 }
