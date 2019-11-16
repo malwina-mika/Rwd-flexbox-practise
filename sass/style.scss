@@ -104,3 +104,31 @@ section{
         }
     }
 }
+
+/* SPLASH*/
+
+.splash{
+    color: $color-main;
+    background-color: $color-three;
+    min-height: 500px;
+    display: flex;
+}
+.splash-inner{
+    margin: auto;
+    max-width: 70%;
+}
+.page-title{
+    font-size:72px;
+    margin: 0;
+    word-spacing:-24px;
+    font-weight: 700;
+    line-height: 1.2;
+    span{
+    font-family: $font-two;
+    }
+}
+.page-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 24px 0;
+}
