@@ -132,3 +132,51 @@ section{
     font-weight: 400;
     margin: 24px 0;
 }
+
+/* BUTTONS*/
+
+.btn-main{
+    color: $color-main;
+    border-color: $color-main;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+    &:hover{
+    color: #0fbcf9;
+    background-position: 0 100%;
+    }
+}
+.btn-two{
+    color: $color-five;
+    border-color: $color-five;
+    background-image: linear-gradient(90deg, $color-five 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+    &:hover{
+    color: $color-hover;
+    background-position: 0 100%;
+    }
+}
+.btn-three{
+    color: $color-four;
+    border-color: $color-four;
+    background-image: linear-gradient(90deg, $color-four 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+    &:hover{
+    color: $color-hover;
+    background-position: 0 100%;
+    }
+}
+.btn-four{
+    border: none;
+    margin: 36px 0;
+    padding: 0;
+    text-align: left;
+    &:hover{
+    color: $color-four;
+    }
+}
